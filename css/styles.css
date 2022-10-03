@@ -8,6 +8,7 @@
     --dark-background:#2F303A; 
     --light-background:#F5F4FA;
     --border-grey-color: #ececec;
+    --border-greylight-color: #eeeeee;
 }
 
 * {
@@ -109,12 +110,35 @@ a {
     margin-left: auto;
 }
 
+.nav__menu li:not(.nav__menu li:last-child) {
+    margin-right: 50px;
+}
+
+.logo span {
+    color: var(--blue-color);
+}
+
+.nav__logo {
+    color: var(--black-color);
+    margin-right: 93px;
+}
+
+.nav__menu {
+    color: var(--dark-color)
+}
+
+.nav__contacts {
+    display: flex;
+    color: var(--grey-color);
+    margin-left: auto;
+}
+
 .nav__contacts li:first-child {
     margin-right: 50px;
 }
 
-nav a:hover,
-nav a:focus,
+.nav a:not(.nav__logo):hover,
+.nav a:not(.nav__logo):focus,
 .contacts a:hover,
 .contacts a:focus  {
     color: var(--blue-color);
@@ -140,13 +164,12 @@ nav a:focus,
 }
 
 .solutions__btn {
-    height: 50px;
     font-weight: 700;
     line-height: 1.9;
     color: var(--white-color);
     background-color: var(--blue-color);
     margin: 0 auto;
-    padding: 20px 32px;
+    padding: 10px 32px;
 }
 
 /*--------- FEATURES --------*/
@@ -228,23 +251,55 @@ nav a:focus,
 }
 
 /*--------- PORTFOLIO --------*/
-.portfolio .btn {
-    height: 38px;
+.portfolio__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio__buttons li:not(.portfolio__buttons li:first-child) {
+    margin-left: 8px;
+}
+
+.portfolio__btn {
     font-weight: 500;
     line-height: 1.6;
     background-color: var(--light-background);
+    padding: 6px 22px;
+}
+
+.portfolio__buttons li:first-child .portfolio__btn {
+    padding: 6px 25px;
 }
 
 .portfolio .btn:hover,
 .portfolio .btn:focus {
     color: var(--white-color);
     background-color: var(--blue-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio__card img {
+   display: block;
+}
+
+.portfolio__content {
+    padding: 20px 24px;
+    border: 1px solid var(--border-greylight-color);
+    border-top: none;
 }
 
 .portfolio h2 {
     font-size: 18px;
     line-height: 2;
     color: var(--dark-color);
+    margin-bottom: 4px;
 }
 
 .portfolio p {
