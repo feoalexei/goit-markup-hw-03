@@ -37,6 +37,10 @@ a {
     line-height: 1.19;
 }
 
+.logo span {
+    color: var(--blue-color);
+}
+
 .current-page {
     color: var(--blue-color);
 }
@@ -69,62 +73,38 @@ a {
     margin-bottom: 50px;
 }
 
+.hidden {
+    display: none;
+}
+
 /*---------- HEADER ----------*/
 
 .header {
+    height: 80px;
     font-size: 14px;
     font-weight: 500;
     border-bottom: 1px solid var(--border-grey-color);
-    padding: 32px 0;
 }
 
 .nav {
     display: flex;
     align-items: center;
-}
-
-.nav__menu {
-    display: flex;
-}
-
-.nav__menu li:not(.nav__menu li:last-child) {
-    margin-right: 50px;
-}
-
-.logo span {
-    color: var(--blue-color);
+    height: 100%;
 }
 
 .nav__logo {
     color: var(--black-color);
     margin-right: 93px;
+    padding: 24px 0 25px;
 }
 
 .nav__menu {
-    color: var(--dark-color)
-}
-
-.nav__contacts {
     display: flex;
-    color: var(--grey-color);
-    margin-left: auto;
+    color: var(--dark-color);
 }
 
 .nav__menu li:not(.nav__menu li:last-child) {
     margin-right: 50px;
-}
-
-.logo span {
-    color: var(--blue-color);
-}
-
-.nav__logo {
-    color: var(--black-color);
-    margin-right: 93px;
-}
-
-.nav__menu {
-    color: var(--dark-color)
 }
 
 .nav__contacts {
@@ -144,7 +124,10 @@ a {
     color: var(--blue-color);
 } 
 
-
+.nav__menu a,
+.nav__contacts a {
+    padding: 32px 0;
+}
 
 /*--------- SOLUTIONS --------*/
 .solutions {
@@ -214,7 +197,6 @@ a {
     margin-right: 30px;
 }
 
-
 /*--------- TEAM --------*/
 .team {
     background-color: var(--light-background);
@@ -236,18 +218,17 @@ a {
     border-radius: 0 0 4px 4px;
 }
 
-.team__card img {
-    margin-bottom: 30px;
-}
-
 .team__card:not(.team__card:last-child) {
     margin-right: 30px;
+}
+
+.team__content {
+    padding: 30px 0;
 }
 
 .team p {
     line-height: 1.19;
     margin-top: 10px;
-    margin-bottom: 30px;
 }
 
 /*--------- PORTFOLIO --------*/
