@@ -11,11 +11,6 @@
     --border-greylight-color: #eeeeee;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--grey-color);
@@ -86,10 +81,14 @@ a {
     border-bottom: 1px solid var(--border-grey-color);
 }
 
+.header__wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .nav {
     display: flex;
     align-items: center;
-    height: 100%;
 }
 
 .nav__logo {
@@ -103,29 +102,29 @@ a {
     color: var(--dark-color);
 }
 
-.nav__menu li:not(.nav__menu li:last-child) {
+.nav__menu li:not(:last-child) {
     margin-right: 50px;
 }
 
-.nav__contacts {
+.header__contacts {
     display: flex;
     color: var(--grey-color);
     margin-left: auto;
 }
 
-.nav__contacts li:first-child {
+.header__contacts li:first-child {
     margin-right: 50px;
 }
 
-.nav a:not(.nav__logo):hover,
-.nav a:not(.nav__logo):focus,
-.contacts a:hover,
-.contacts a:focus  {
+.nav__menu a:hover,
+.nav__menu a:focus,
+.header__contacts a:hover,
+.header__contacts a:focus  {
     color: var(--blue-color);
 } 
 
 .nav__menu a,
-.nav__contacts a {
+.header__contacts a {
     padding: 32px 0;
 }
 
@@ -136,7 +135,7 @@ a {
     padding: 200px 0;
 }
 
-.solutions h1 {
+.solutions__title {
     max-width: 696px;
     font-size: 44px;
     font-weight: 900;
@@ -160,7 +159,7 @@ a {
     font-size: 14px;
 }
 
-.features h3 {
+.features__title {
     font-size: inherit;
     line-height: 1.14;
     color: var(--dark-color);
@@ -180,7 +179,7 @@ a {
     margin-right: 0;
 }
 
-.features__cards p {
+.features__text {
     line-height: 1.7;
 }
 
@@ -193,18 +192,13 @@ a {
     display: flex;
 }
 
-.products__gallery li:not(.products__gallery li:last-child) {
+.products__gallery li:not(:last-child) {
     margin-right: 30px;
 }
 
 /*--------- TEAM --------*/
 .team {
     background-color: var(--light-background);
-}
-
-.team h3 {
-    font-size: 16px;
-    color: var(--dark-color);
 }
 
 .team__cards {
@@ -218,7 +212,7 @@ a {
     border-radius: 0 0 4px 4px;
 }
 
-.team__card:not(.team__card:last-child) {
+.team__card:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -226,7 +220,12 @@ a {
     padding: 30px 0;
 }
 
-.team p {
+.team__name {
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.team__position {
     line-height: 1.19;
     margin-top: 10px;
 }
@@ -238,7 +237,7 @@ a {
     margin-bottom: 50px;
 }
 
-.portfolio__buttons li:not(.portfolio__buttons li:first-child) {
+.portfolio__buttons li:not(:first-child) {
     margin-left: 8px;
 }
 
@@ -266,7 +265,7 @@ a {
     gap: 30px;
 }
 
-.portfolio__card img {
+.portfolio__img {
    display: block;
 }
 
@@ -276,14 +275,14 @@ a {
     border-top: none;
 }
 
-.portfolio h2 {
+.portfolio__title {
     font-size: 18px;
     line-height: 2;
     color: var(--dark-color);
     margin-bottom: 4px;
 }
 
-.portfolio p {
+.portfolio__text {
     line-height: 1.875;
 }
 
@@ -305,7 +304,7 @@ a {
     color: var(--semi-white-color);
 }
 
-.footer__contacts li:not(.footer__contacts li:last-child) {
+.footer__contacts li:not(:last-child) {
     margin-bottom: 9px;
 }
 

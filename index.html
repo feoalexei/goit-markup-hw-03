@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,35 +20,39 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav container">
-        <a class="logo nav__logo" href="index.html"><span>Web</span>Studio</a>
-        <ul class="nav__menu">
-          <li>
-            <a class="current-page" href="index.html">Студія</a>
-          </li>
-          <li>
-            <a href="portfolio.html">Портфоліо</a>
-          </li>
-          <li>
-            <a href="#">Контакти</a>
-          </li>
-        </ul>
-        <ul class="nav__contacts">
-          <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="header__wrapper">
+          <nav class="nav">
+            <a class="logo nav__logo" href="index.html"><span>Web</span>Studio</a>
+            <ul class="nav__menu">
+              <li>
+                <a class="current-page" href="index.html">Студія</a>
+              </li>
+              <li>
+                <a href="portfolio.html">Портфоліо</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__contacts">
+            <li>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- Efficient solutions-->
       <section class="section solutions">
         <div class="container">
-          <h1>Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="solutions__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn solutions__btn" type="button">
             Замовити послугу
           </button>
@@ -60,28 +65,28 @@
           <h2 class="section-title hidden">Lorem ipsum</h2>
           <ul class="features__cards">
             <li>
-              <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p>
+              <h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li>
-              <h3>ПУНКТУАЛЬНІСТЬ</h3>
-              <p>
+              <h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="features__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
             <li>
-              <h3>ПЛАНУВАННЯ</h3>
-              <p>
+              <h3 class="features__title">ПЛАНУВАННЯ</h3>
+              <p class="features__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li>
-              <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p>
+              <h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="features__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -132,8 +137,8 @@
                 width="270"
               />
               <div class="team__content">
-                <h3>Ігор Дем'яненко</h3>
-                <p>Product Designer</p>
+                <h3 class="team__name">Ігор Дем'яненко</h3>
+                <p class="team__position">Product Designer</p>
               </div>
             </li>
             <li class="team__card">
@@ -143,8 +148,8 @@
                 width="270"
               />
               <div class="team__content">
-                <h3>Ольга Рєпіна</h3>
-                <p>Frontend Developer</p>
+                <h3 class="team__name">Ольга Рєпіна</h3>
+                <p class="team__position">Frontend Developer</p>
               </div>
             </li>
             <li class="team__card">
@@ -154,8 +159,8 @@
                 width="270"
               />
               <div class="team__content">
-                <h3>Микола Тарасов</h3>
-                <p>Marketing</p>
+                <h3 class="team__name">Микола Тарасов</h3>
+                <p class="team__position">Marketing</p>
               </div>
             </li>
             <li class="team__card">
@@ -165,8 +170,8 @@
                 width="270"
               />
               <div class="team__content">
-                <h3>Михайло Єрмаков</h3>
-                <p>UI Designer</p>
+                <h3 class="team__name">Михайло Єрмаков</h3>
+                <p class="team__position">UI Designer</p>
               </div>
             </li>
           </ul>
